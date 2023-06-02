@@ -14,7 +14,14 @@ module.exports = {
   ],
   rules: {
     'react-hooks/exhaustive-deps': 'off',
-    quotes: ['error', 'single'],
+    quotes: [
+      'error',
+      'single',
+      {
+        avoidEscape: true,
+        allowTemplateLiterals: true,
+      },
+    ],
     'object-curly-spacing': ['error', 'always'],
     'array-bracket-spacing': ['error', 'never'],
     'react/require-default-props': ['error'],
@@ -38,5 +45,11 @@ module.exports = {
     '.eslintignore',
     '*.gradle',
     '*.plist',
+    '*.json',
+    '*.png',
+    '*.mtl',
+    '*.obj',
+    '*.jpg',
+    '*.svg',
   ],
 };
