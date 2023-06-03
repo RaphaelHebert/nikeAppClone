@@ -3,7 +3,6 @@ import React from 'react';
 
 import { CardListItem } from '../../components';
 import cart from '../../assets/data/cart';
-// eslint-disable-next-line
 import { ICartItem } from '../../types/types';
 
 const ShoppingCart = () => {
