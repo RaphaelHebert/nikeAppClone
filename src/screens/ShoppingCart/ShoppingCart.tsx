@@ -17,7 +17,7 @@ const { footerComponentContainer, row, text, textBold, checkoutButton } =
   styles;
 const { buttonTextStyle, buttonStyle } = productDetailScreenCard;
 
-const FooterComponent = () => {
+const FooterComponent: React.FC = () => {
   const { width } = useWindowDimensions();
   return (
     <View style={[footerComponentContainer, { width }]}>
@@ -49,7 +49,7 @@ const FooterComponent = () => {
   );
 };
 
-const ShoppingCart = () => {
+const ShoppingCart: React.FC = () => {
   const cartList: ICartItem[] = cart;
 
   function confirmBuy() {
