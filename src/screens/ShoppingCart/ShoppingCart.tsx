@@ -7,13 +7,13 @@ import {
 } from 'react-native';
 import React from 'react';
 
-import { CardListItem } from '../../components';
+import { CardListItem, CustomButton } from '../../components';
 import cart from '../../assets/data/cart';
 import { ICartItem } from '../../types/types';
 import styles from './styles';
 import productDetailScreenCard from '../ProductDetailScreen/styles';
 
-const { footerComponentContainer, row, text, textBold, checkoutButton } =
+const { footerComponentContainer, row, text, textBold, customContainer } =
   styles;
 const { buttonTextStyle, buttonStyle } = productDetailScreenCard;
 
@@ -65,9 +65,12 @@ const ShoppingCart: React.FC = () => {
         )}
         ListFooterComponent={FooterComponent}
       />
-      <Pressable style={[buttonStyle, checkoutButton]} onPress={confirmBuy}>
+      <CustomButton onPress={confirmBuy} customStyle={customContainer}>
         <Text style={buttonTextStyle}>Checkout</Text>
-      </Pressable>
+      </CustomButton>
+      {/* <Pressable style={[buttonStyle, checkoutButton]} onPress={confirmBuy}>
+        
+      </Pressable> */}
     </View>
   );
 };

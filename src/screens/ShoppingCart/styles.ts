@@ -18,7 +18,7 @@ export default StyleSheet.create({
   textBold: {
     fontWeight: '900',
   },
-  checkoutButton: {
+  customContainer: {
     position: 'relative',
     marginTop: 10,
   },
