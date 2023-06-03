@@ -10,8 +10,10 @@ module.exports = {
     'plugin:jest/recommended',
     'plugin:react/recommended',
     '@react-native-community',
+    'plugin:@typescript-eslint/recommended',
     'prettier',
   ],
+  plugins: ['@typescript-eslint'],
   rules: {
     'react-hooks/exhaustive-deps': 'off',
     quotes: [
@@ -33,7 +35,7 @@ module.exports = {
       'babel-module': {},
     },
   },
-  parser: '@babel/eslint-parser',
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     // Required for certain syntax usages
     ecmaVersion: 'latest',

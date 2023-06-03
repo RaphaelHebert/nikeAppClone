@@ -9,7 +9,6 @@ import {
 } from 'react-native';
 import React from 'react';
 
-// eslint-disable-next-line
 import { IProduct } from '../../types/types';
 import products from '../../assets/data/products';
 
