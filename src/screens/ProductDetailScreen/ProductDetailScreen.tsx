@@ -5,13 +5,13 @@ import {
   useWindowDimensions,
   Text,
   ScrollView,
-  Pressable,
 } from 'react-native';
 import React from 'react';
 
 import { IProduct } from '../../types/types';
 import products from '../../assets/data/products';
 
+import { CustomButton } from '../../components';
 import styles from './styles';
 
 const {
@@ -50,9 +50,9 @@ const ProductDetailScreen = () => {
           <Text style={descriptionStyle}>{product.description}</Text>
         </View>
       </ScrollView>
-      <Pressable style={buttonStyle} onPress={addToCart}>
+      <CustomButton onPress={addToCart}>
         <Text style={buttonTextStyle}>Add to Cart</Text>
-      </Pressable>
+      </CustomButton>
     </View>
   );
 };

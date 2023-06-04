@@ -4,16 +4,17 @@ import React from 'react';
 
 import { styles } from './style';
 
-interface IProps {
-  customStyle: ViewStyle & FlexStyle;
+type IContainer = ViewStyle & FlexStyle;
+export interface IProps {
+  customStyle?: IContainer;
   onPress: () => void;
 }
 
 const { container } = styles;
 
 const Button: React.FC<PropsWithChildren<IProps>> = ({
-  onPress = () => console.warn('clicked button'),
   customStyle = {},
+  onPress = () => console.warn('clicked button'),
   children,
 }) => {
   return (

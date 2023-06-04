@@ -1,10 +1,4 @@
-import {
-  View,
-  FlatList,
-  Text,
-  useWindowDimensions,
-  Pressable,
-} from 'react-native';
+import { View, FlatList, Text, useWindowDimensions } from 'react-native';
 import React from 'react';
 
 import { CardListItem, CustomButton } from '../../components';
@@ -15,7 +9,7 @@ import productDetailScreenCard from '../ProductDetailScreen/styles';
 
 const { footerComponentContainer, row, text, textBold, customContainer } =
   styles;
-const { buttonTextStyle, buttonStyle } = productDetailScreenCard;
+const { buttonTextStyle } = productDetailScreenCard;
 
 const FooterComponent: React.FC = () => {
   const { width } = useWindowDimensions();
@@ -68,9 +62,6 @@ const ShoppingCart: React.FC = () => {
       <CustomButton onPress={confirmBuy} customStyle={customContainer}>
         <Text style={buttonTextStyle}>Checkout</Text>
       </CustomButton>
-      {/* <Pressable style={[buttonStyle, checkoutButton]} onPress={confirmBuy}>
-        
-      </Pressable> */}
     </View>
   );
 };
