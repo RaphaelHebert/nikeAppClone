@@ -19,16 +19,6 @@ export default StyleSheet.create({
   innerContainer: {
     padding: 20,
   },
-  buttonStyle: {
-    position: 'absolute',
-    bottom: 25,
-    padding: 20,
-    alignSelf: 'center',
-    width: '90%',
-    backgroundColor: '#000',
-    borderRadius: 100,
-    alignItems: 'center',
-  },
   buttonTextStyle: {
     color: '#FFF',
     fontWeight: '500',

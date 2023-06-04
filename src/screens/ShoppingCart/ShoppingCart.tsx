@@ -1,23 +1,17 @@
-import {
-  View,
-  FlatList,
-  Text,
-  useWindowDimensions,
-  Pressable,
-} from 'react-native';
+import { View, FlatList, Text, useWindowDimensions } from 'react-native';
 import React from 'react';
 
-import { CardListItem } from '../../components';
+import { CardListItem, CustomButton } from '../../components';
 import cart from '../../assets/data/cart';
 import { ICartItem } from '../../types/types';
 import styles from './styles';
 import productDetailScreenCard from '../ProductDetailScreen/styles';
 
-const { footerComponentContainer, row, text, textBold, checkoutButton } =
+const { footerComponentContainer, row, text, textBold, customContainer } =
   styles;
-const { buttonTextStyle, buttonStyle } = productDetailScreenCard;
+const { buttonTextStyle } = productDetailScreenCard;
 
-const FooterComponent = () => {
+const FooterComponent: React.FC = () => {
   const { width } = useWindowDimensions();
   return (
     <View style={[footerComponentContainer, { width }]}>
@@ -49,7 +43,7 @@ const FooterComponent = () => {
   );
 };
 
-const ShoppingCart = () => {
+const ShoppingCart: React.FC = () => {
   const cartList: ICartItem[] = cart;
 
   function confirmBuy() {
@@ -65,9 +59,9 @@ const ShoppingCart = () => {
         )}
         ListFooterComponent={FooterComponent}
       />
-      <Pressable style={[buttonStyle, checkoutButton]} onPress={confirmBuy}>
+      <CustomButton onPress={confirmBuy} customStyle={customContainer}>
         <Text style={buttonTextStyle}>Checkout</Text>
-      </Pressable>
+      </CustomButton>
     </View>
   );
 };
