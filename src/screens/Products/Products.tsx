@@ -1,42 +1,40 @@
-import { useEffect } from 'react';
-import { FlatList, Image, Pressable, Text } from 'react-native';
-import React from 'react';
-import { useNavigation } from '@react-navigation/native';
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import { useEffect } from "react";
+import { FlatList, Image, Pressable, View, Text } from "react-native";
+import React from "react";
+import { useNavigation } from "@react-navigation/native";
+import { useSelector, useDispatch } from "react-redux";
 
-import products from '../../assets/data/products';
-import styles from './styles';
+import { TopRightIcon } from "../../components";
+import { setSelectedProduct } from "../../store/productSlice";
+import { IProduct, IState } from "../../types/types";
+
+import styles from "./styles";
 
 const { productImage, productContainer, iconContainer, iconText } = styles;
 
-const TopRightIcon = ({ navigation }) => {
-  return (
-    <Pressable
-      style={iconContainer}
-      onPress={() => navigation.navigate('ShoppingCart')}
-    >
-      <Text style={iconText}>1</Text>
-      <FontAwesome5 name={'shopping-cart'} size={24} color="gray" />
-    </Pressable>
-  );
-};
-
-const Products = ({ navigation }) => {
+const Products = ({ navigation }: { navigation: any }) => {
   const nav = useNavigation();
+  const dispatch = useDispatch();
+  const products = useSelector((state) => (state as IState).products);
+
+  console.warn(products);
+
   useEffect(() => {
     nav.setOptions({
       headerRight: () => <TopRightIcon navigation={navigation} />,
     });
   }, []);
-  function checkDetails() {
-    console.warn('navigate');
-    navigation.navigate('ProductDetailScreen');
+
+  function checkDetails(item: IProduct) {
+    dispatch(setSelectedProduct(item));
+    navigation.navigate("ProductDetailScreen");
   }
+
   return (
     <FlatList
       data={products}
       renderItem={({ item, index }) => (
-        <Pressable onPress={checkDetails} style={productContainer}>
+        <Pressable onPress={() => checkDetails(item)} style={productContainer}>
           <Image
             style={productImage}
             source={{ uri: item.image }}

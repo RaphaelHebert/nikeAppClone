@@ -7,11 +7,10 @@ import {
   ScrollView,
 } from 'react-native';
 import React from 'react';
-
-import { IProduct } from '../../types/types';
-import products from '../../assets/data/products';
-
+import { useDispatch, useSelector } from 'react-redux';
+import { IProduct, IState } from '../../types/types';
 import { CustomButton } from '../../components';
+import { addItemToCart } from '../../store/productSlice';
 import styles from './styles';
 
 const {
@@ -19,16 +18,26 @@ const {
   priceStyle,
   descriptionStyle,
   innerContainer,
-  buttonStyle,
   buttonTextStyle,
 } = styles;
 
+// TODO : implement select size options
+
 const ProductDetailScreen = () => {
-  const product: IProduct = products[0];
+  const dispatch = useDispatch();
+  const product: IProduct = useSelector(
+    state => (state as IState).selectedProduct,
+  );
+
+  //const product: IProduct = products[0];
   const { width } = useWindowDimensions();
 
   function addToCart() {
-    console.warn('added to cart');
+    const actionToDispatch = addItemToCart({
+      product,
+      size: 44, // default size as size cannot be selected atm
+    });
+    dispatch(actionToDispatch);
   }
 
   return (
