@@ -1,4 +1,4 @@
-import { StyleSheet, ViewStyle } from 'react-native';
+import { StyleSheet, ViewStyle } from "react-native";
 
 export interface Style {
   container: ViewStyle;
@@ -6,13 +6,13 @@ export interface Style {
 
 export const styles = StyleSheet.create<Style>({
   container: {
-    position: 'absolute',
-    bottom: 25,
-    padding: 20,
-    alignSelf: 'center',
-    width: '90%',
-    backgroundColor: '#000',
+    position: "absolute",
+    bottom: 65,
+    padding: 17,
+    alignSelf: "center",
+    width: "90%",
+    backgroundColor: "#000",
     borderRadius: 100,
-    alignItems: 'center',
+    alignItems: "center",
   },
 });
