@@ -1,10 +1,14 @@
-import React from 'react';
-import { View, Text, Image } from 'react-native';
+import React from "react";
+import { View, Text, Image, Pressable } from "react-native";
+import { useSelector, useDispatch } from "react-redux";
+import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-
-import { ICartItem } from '../../types/types';
-import styles from './styles';
+import {
+  addItemToCart,
+  removeItemFromCart,
+} from "../../../src/store/productSlice";
+import { ICartItem } from "../../types/types";
+import styles from "./styles";
 
 const {
   container,
@@ -22,12 +26,17 @@ interface IProps {
   cartItem: ICartItem;
 }
 const CartListItem: React.FC<IProps> = ({ cartItem }) => {
+  const dispatch = useDispatch();
+
   const increaseQuantity = () => {
-    console.warn('clicked increase');
+    console.warn("increase");
+    dispatch(addItemToCart({ product: cartItem.product, size: cartItem.size }));
   };
 
   const decreaseQuantity = () => {
-    console.warn('clicked decrease');
+    dispatch(
+      removeItemFromCart({ product: cartItem.product, size: cartItem.size })
+    );
   };
 
   return (
@@ -41,21 +50,17 @@ const CartListItem: React.FC<IProps> = ({ cartItem }) => {
 
         <View style={[footer, spaceBetween]}>
           <View style={footer}>
-            <FontAwesome5
-              name={'minus-circle'}
-              onPress={decreaseQuantity}
-              size={24}
-              color="gray"
-            />
+            <Pressable onPress={decreaseQuantity}>
+              <FontAwesome5 name={"minus-circle"} size={24} color="gray" />
+            </Pressable>
             <Text style={quantity}>{cartItem.quantity}</Text>
-            <FontAwesome5
-              name={'plus-circle'}
-              onPress={increaseQuantity}
-              size={24}
-              color="gray"
-            />
+            <Pressable onPress={increaseQuantity}>
+              <FontAwesome5 name={"plus-circle"} size={24} color="gray" />
+            </Pressable>
           </View>
-          <Text style={itemTotal}>${cartItem.product.price}</Text>
+          <Text style={itemTotal}>
+            {cartItem.product.price * cartItem.quantity}US$
+          </Text>
         </View>
       </View>
     </View>

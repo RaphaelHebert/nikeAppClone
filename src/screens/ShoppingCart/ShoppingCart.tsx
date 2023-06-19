@@ -1,11 +1,10 @@
-import { View, FlatList, Text, useWindowDimensions } from 'react-native';
-import React from 'react';
-
-import { CardListItem, CustomButton } from '../../components';
-import cart from '../../assets/data/cart';
-import { ICartItem } from '../../types/types';
-import styles from './styles';
-import productDetailScreenCard from '../ProductDetailScreen/styles';
+import { View, FlatList, Text, useWindowDimensions } from "react-native";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { CardListItem, CustomButton } from "../../components";
+import { ICartItem, IState, ICart } from "../../types/types";
+import styles from "./styles";
+import productDetailScreenCard from "../ProductDetailScreen/styles";
 
 const { footerComponentContainer, row, text, textBold, customContainer } =
   styles;
@@ -13,6 +12,11 @@ const { buttonTextStyle } = productDetailScreenCard;
 
 const FooterComponent: React.FC = () => {
   const { width } = useWindowDimensions();
+  const cart = useSelector((state) => (state as IState).cart);
+  const subtotal = Object.keys(cart).reduce(
+    (acc, key) => acc + cart[key].product.price * cart[key].quantity,
+    0
+  );
   return (
     <View style={[footerComponentContainer, { width }]}>
       <View style={row}>
@@ -20,7 +24,7 @@ const FooterComponent: React.FC = () => {
           <Text style={text}>SubTotal</Text>
         </View>
         <View>
-          <Text style={text}>420 US$</Text>
+          <Text style={text}>{subtotal} US$</Text>
         </View>
       </View>
       <View style={row}>
@@ -36,7 +40,7 @@ const FooterComponent: React.FC = () => {
           <Text style={[text, textBold]}>Total</Text>
         </View>
         <View>
-          <Text style={[text, textBold]}>440 US$</Text>
+          <Text style={[text, textBold]}>{subtotal + 20} US$</Text>
         </View>
       </View>
     </View>
@@ -44,19 +48,20 @@ const FooterComponent: React.FC = () => {
 };
 
 const ShoppingCart: React.FC = () => {
-  const cartList: ICartItem[] = cart;
+  const cart: ICart = useSelector((state) => (state as IState).cart);
 
   function confirmBuy() {
-    console.warn('clicked confirm buy button');
+    console.warn("clicked confirm buy button");
   }
 
+  const actualCart = Object.values(cart).filter((item) => item.quantity > 0);
   return (
     <View>
       <FlatList
-        data={cartList}
-        renderItem={({ item }: { item: ICartItem }) => (
-          <CardListItem cartItem={item} />
-        )}
+        data={actualCart}
+        renderItem={({ item }: { item: ICartItem }) => {
+          return <CardListItem cartItem={item} />;
+        }}
         ListFooterComponent={FooterComponent}
       />
       <CustomButton onPress={confirmBuy} customStyle={customContainer}>

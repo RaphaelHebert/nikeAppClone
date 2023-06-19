@@ -1,0 +1,142 @@
+{
+  "buildFiles": [
+    "/Users/raphaelhebert/Desktop/nike/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
+    "/Users/raphaelhebert/Desktop/nike/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/CMakeLists.txt",
+    "/Users/raphaelhebert/Desktop/nike/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
+    "/Users/raphaelhebert/Desktop/nike/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt",
+    "/Users/raphaelhebert/Desktop/nike/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/raphaelhebert/Library/Android/sdk/cmake/3.18.1/bin/ninja",
+      "-C",
+      "/Users/raphaelhebert/Desktop/nike/android/app/.cxx/Debug/6u3m4n6a/x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/raphaelhebert/Library/Android/sdk/cmake/3.18.1/bin/ninja",
+    "-C",
+    "/Users/raphaelhebert/Desktop/nike/android/app/.cxx/Debug/6u3m4n6a/x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "react_codegen_safeareacontext::@7984cd80db47aa7b952a": {
+      "artifactName": "react_codegen_safeareacontext",
+      "abi": "x86_64",
+      "output": "/Users/raphaelhebert/Desktop/nike/android/app/build/intermediates/cxx/Debug/6u3m4n6a/obj/x86_64/libreact_codegen_safeareacontext.so",
+      "runtimeFiles": [
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/746ddae054242170904465ff7017a7fe/transformed/jetified-fbjni-0.3.0/prefab/modules/fbjni/libs/android.x86_64/libfbjni.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/folly_runtime/libs/android.x86_64/libfolly_runtime.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/glog/libs/android.x86_64/libglog.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/jsi/libs/android.x86_64/libjsi.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_codegen_rncore/libs/android.x86_64/libreact_codegen_rncore.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_debug/libs/android.x86_64/libreact_debug.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_nativemodule_core/libs/android.x86_64/libreact_nativemodule_core.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_core/libs/android.x86_64/libreact_render_core.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_debug/libs/android.x86_64/libreact_render_debug.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_graphics/libs/android.x86_64/libreact_render_graphics.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_mapbuffer/libs/android.x86_64/libreact_render_mapbuffer.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/rrc_view/libs/android.x86_64/librrc_view.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/turbomodulejsijni/libs/android.x86_64/libturbomodulejsijni.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/yoga/libs/android.x86_64/libyoga.so"
+      ]
+    },
+    "react_codegen_rngesturehandler_codegen::@39f233abcd2c728bc6ec": {
+      "artifactName": "react_codegen_rngesturehandler_codegen",
+      "abi": "x86_64",
+      "output": "/Users/raphaelhebert/Desktop/nike/android/app/build/intermediates/cxx/Debug/6u3m4n6a/obj/x86_64/libreact_codegen_rngesturehandler_codegen.so",
+      "runtimeFiles": [
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/746ddae054242170904465ff7017a7fe/transformed/jetified-fbjni-0.3.0/prefab/modules/fbjni/libs/android.x86_64/libfbjni.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/folly_runtime/libs/android.x86_64/libfolly_runtime.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/glog/libs/android.x86_64/libglog.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/jsi/libs/android.x86_64/libjsi.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_codegen_rncore/libs/android.x86_64/libreact_codegen_rncore.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_debug/libs/android.x86_64/libreact_debug.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_nativemodule_core/libs/android.x86_64/libreact_nativemodule_core.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_core/libs/android.x86_64/libreact_render_core.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_debug/libs/android.x86_64/libreact_render_debug.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_graphics/libs/android.x86_64/libreact_render_graphics.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_imagemanager/libs/android.x86_64/libreact_render_imagemanager.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/rrc_image/libs/android.x86_64/librrc_image.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/rrc_view/libs/android.x86_64/librrc_view.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/turbomodulejsijni/libs/android.x86_64/libturbomodulejsijni.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/yoga/libs/android.x86_64/libyoga.so"
+      ]
+    },
+    "react_codegen_reactnativemmkv::@53a90ad335aa3dba27a5": {
+      "artifactName": "react_codegen_reactnativemmkv",
+      "abi": "x86_64",
+      "output": "/Users/raphaelhebert/Desktop/nike/android/app/build/intermediates/cxx/Debug/6u3m4n6a/obj/x86_64/libreact_codegen_reactnativemmkv.so",
+      "runtimeFiles": [
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/746ddae054242170904465ff7017a7fe/transformed/jetified-fbjni-0.3.0/prefab/modules/fbjni/libs/android.x86_64/libfbjni.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/folly_runtime/libs/android.x86_64/libfolly_runtime.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/glog/libs/android.x86_64/libglog.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/jsi/libs/android.x86_64/libjsi.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_codegen_rncore/libs/android.x86_64/libreact_codegen_rncore.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_debug/libs/android.x86_64/libreact_debug.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_nativemodule_core/libs/android.x86_64/libreact_nativemodule_core.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_core/libs/android.x86_64/libreact_render_core.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_debug/libs/android.x86_64/libreact_render_debug.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_graphics/libs/android.x86_64/libreact_render_graphics.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_imagemanager/libs/android.x86_64/libreact_render_imagemanager.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/rrc_image/libs/android.x86_64/librrc_image.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/rrc_view/libs/android.x86_64/librrc_view.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/turbomodulejsijni/libs/android.x86_64/libturbomodulejsijni.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/yoga/libs/android.x86_64/libyoga.so"
+      ]
+    },
+    "react_codegen_rnscreens::@25bcbd507e98d3a854ad": {
+      "artifactName": "react_codegen_rnscreens",
+      "abi": "x86_64",
+      "output": "/Users/raphaelhebert/Desktop/nike/android/app/build/intermediates/cxx/Debug/6u3m4n6a/obj/x86_64/libreact_codegen_rnscreens.so",
+      "runtimeFiles": [
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/746ddae054242170904465ff7017a7fe/transformed/jetified-fbjni-0.3.0/prefab/modules/fbjni/libs/android.x86_64/libfbjni.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/folly_runtime/libs/android.x86_64/libfolly_runtime.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/glog/libs/android.x86_64/libglog.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/jsi/libs/android.x86_64/libjsi.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_codegen_rncore/libs/android.x86_64/libreact_codegen_rncore.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_debug/libs/android.x86_64/libreact_debug.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_nativemodule_core/libs/android.x86_64/libreact_nativemodule_core.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_core/libs/android.x86_64/libreact_render_core.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_debug/libs/android.x86_64/libreact_render_debug.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_graphics/libs/android.x86_64/libreact_render_graphics.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_mapbuffer/libs/android.x86_64/libreact_render_mapbuffer.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/rrc_view/libs/android.x86_64/librrc_view.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/turbomodulejsijni/libs/android.x86_64/libturbomodulejsijni.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/yoga/libs/android.x86_64/libyoga.so"
+      ]
+    },
+    "appmodules::@6890427a1f51a3e7e1df": {
+      "artifactName": "appmodules",
+      "abi": "x86_64",
+      "output": "/Users/raphaelhebert/Desktop/nike/android/app/build/intermediates/cxx/Debug/6u3m4n6a/obj/x86_64/libappmodules.so",
+      "runtimeFiles": [
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/fabricjni/libs/android.x86_64/libfabricjni.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_newarchdefaults/libs/android.x86_64/libreact_newarchdefaults.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_componentregistry/libs/android.x86_64/libreact_render_componentregistry.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/runtimeexecutor/libs/android.x86_64/libruntimeexecutor.so",
+        "/Users/raphaelhebert/Desktop/nike/android/app/build/intermediates/cxx/Debug/6u3m4n6a/obj/x86_64/libreact_codegen_rngesturehandler_codegen.so",
+        "/Users/raphaelhebert/Desktop/nike/android/app/build/intermediates/cxx/Debug/6u3m4n6a/obj/x86_64/libreact_codegen_reactnativemmkv.so",
+        "/Users/raphaelhebert/Desktop/nike/android/app/build/intermediates/cxx/Debug/6u3m4n6a/obj/x86_64/libreact_codegen_safeareacontext.so",
+        "/Users/raphaelhebert/Desktop/nike/android/app/build/intermediates/cxx/Debug/6u3m4n6a/obj/x86_64/libreact_codegen_rnscreens.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_imagemanager/libs/android.x86_64/libreact_render_imagemanager.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/rrc_image/libs/android.x86_64/librrc_image.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/746ddae054242170904465ff7017a7fe/transformed/jetified-fbjni-0.3.0/prefab/modules/fbjni/libs/android.x86_64/libfbjni.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/folly_runtime/libs/android.x86_64/libfolly_runtime.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/glog/libs/android.x86_64/libglog.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/jsi/libs/android.x86_64/libjsi.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_codegen_rncore/libs/android.x86_64/libreact_codegen_rncore.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_debug/libs/android.x86_64/libreact_debug.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_nativemodule_core/libs/android.x86_64/libreact_nativemodule_core.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_core/libs/android.x86_64/libreact_render_core.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_debug/libs/android.x86_64/libreact_render_debug.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_graphics/libs/android.x86_64/libreact_render_graphics.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/react_render_mapbuffer/libs/android.x86_64/libreact_render_mapbuffer.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/rrc_view/libs/android.x86_64/librrc_view.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/turbomodulejsijni/libs/android.x86_64/libturbomodulejsijni.so",
+        "/Users/raphaelhebert/.gradle/caches/transforms-3/ad027df5cc0252cf290d9cc32e3d3e29/transformed/jetified-react-android-0.71.4-debug/prefab/modules/yoga/libs/android.x86_64/libyoga.so"
+      ]
+    }
+  }
+}
