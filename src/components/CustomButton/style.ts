@@ -1,18 +1,27 @@
 import { StyleSheet, ViewStyle } from "react-native";
 
 export interface Style {
-  container: ViewStyle;
+  innerContainer: ViewStyle;
+  outerContainer: ViewStyle;
+  buttonPressed: ViewStyle;
 }
 
 export const styles = StyleSheet.create<Style>({
-  container: {
+  innerContainer: {
+    alignItems: "center",
+    padding: 17,
+  },
+  outerContainer: {
+    overflow: "hidden",
+    borderRadius: 100,
     position: "absolute",
     bottom: 65,
-    padding: 17,
-    alignSelf: "center",
     width: "90%",
     backgroundColor: "#000",
-    borderRadius: 100,
-    alignItems: "center",
+    alignSelf: "center",
+    elevation: 2,
+  },
+  buttonPressed: {
+    opacity: 0.6,
   },
 });
