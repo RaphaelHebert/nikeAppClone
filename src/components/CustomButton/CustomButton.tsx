@@ -1,5 +1,5 @@
 import { PropsWithChildren } from "react";
-import { Pressable, ViewStyle, FlexStyle } from "react-native";
+import { Pressable, ViewStyle, FlexStyle, View } from "react-native";
 import React from "react";
 
 import { styles } from "./style";
@@ -10,7 +10,7 @@ export interface IProps {
   onPress: () => void;
 }
 
-const { container } = styles;
+const { outerContainer, innerContainer, buttonPressed } = styles;
 
 const Button: React.FC<PropsWithChildren<IProps>> = ({
   customStyle = {},
@@ -18,9 +18,19 @@ const Button: React.FC<PropsWithChildren<IProps>> = ({
   children,
 }) => {
   return (
-    <Pressable style={[container, customStyle]} onPress={onPress}>
-      {children}
-    </Pressable>
+    <View style={outerContainer}>
+      <Pressable
+        style={({ pressed }) =>
+          pressed
+            ? [innerContainer, customStyle, buttonPressed]
+            : [innerContainer, customStyle]
+        }
+        onPress={onPress}
+        android_ripple={{ color: "#eee" }}
+      >
+        {children}
+      </Pressable>
+    </View>
   );
 };
 
